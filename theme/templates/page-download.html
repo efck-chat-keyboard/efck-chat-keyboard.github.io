@@ -1,0 +1,20 @@
+{% extends "page.html" %}
+
+
+{% block foot %}
+<script>
+    function getOS() {
+        let p = window.navigator?.userAgentData?.platform || window.navigator.platform;
+        if (p.startsWith('Win')) return '#win';
+        if (p.startsWith('Mac')) return '#mac';
+        if (p.startsWith('Linux')) return '#linux';
+    }
+    window.addEventListener('load', () => {
+        let details = document.querySelector(getOS());
+        if (details) {
+            details.open = true;
+            details.parentElement.insertBefore(details, details.parentElement.firstChild);
+        }
+    });
+</script>
+{% endblock %}

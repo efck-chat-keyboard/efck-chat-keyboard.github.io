@@ -1,0 +1,46 @@
+on:
+  push:
+    branches:
+      - dev
+  pull_request:
+    branches:
+      - dev
+
+jobs:
+  build:
+    name: Build & Deploy
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/setup-python@v4
+        with:
+          python-version: 3.9
+      - uses: actions/checkout@v3
+        with:
+          ref: dev
+      - uses: actions/cache@v3
+        with:
+          path: ~/.cache/pip
+          key: pip-${{ hashFiles('**/requirements.txt') }}
+
+      - run: pip install -r requirements.txt
+      - run: pelican -vD --fatal warnings
+
+      - name: Checkout gh-pages
+        if: ${{ github.event_name == 'push' }}
+        uses: actions/checkout@v2
+        with:
+          ref: gh-pages
+          path: gh-pages
+
+      - name: Deploy
+        if: ${{ github.event_name == 'push' }}
+        run: |
+          git config --global user.name "$GITHUB_ACTOR"
+          git config --global user.email "github-actions@github.com"
+          rm -rf gh-pages/*
+          cp -R output/* gh-pages
+          cd gh-pages
+          git add *
+          if git diff --staged --quiet; then echo "$0: No changes to commit."; exit 0; fi
+          git commit -a -m "CI: Update $GITHUB_SHA"
+          git push

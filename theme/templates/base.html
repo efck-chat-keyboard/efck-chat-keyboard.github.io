@@ -1,0 +1,54 @@
+<!doctype html>
+{% set content_obj = article or page %}
+{% set lang = content_obj.lang %}
+<html lang="{{ lang }}">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{{ content_obj.title | escape }} – {{ SITENAME }}{% endblock title %}</title>
+    {% if content_obj.description %}
+    <meta name="description" content="{{ content_obj.description | escape }}">
+    {% endif %}
+
+    <link rel="stylesheet" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/sanitize.css">
+    <link rel="stylesheet" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/style.css">
+    <link rel="stylesheet" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/style-desktop.css" media="screen and (min-width: 790px)">
+    <script async defer src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/script.js"></script>
+
+    {% include '_analytics.html' %}
+
+    {% if content_obj.status != 'hidden' %}
+    <link rel="canonical" href="{{ SITEURL }}/{{ content_obj.url }}">
+    {% endif %}
+    <link rel="logo icon" href="{{ SITEURL }}/logo.png">
+
+    <meta name="theme-color" content="#eef">
+
+    {% block head %}{% endblock %}
+</head>
+<body>
+    <header>
+        <a href="{{ SITEURL }}/" rel="home"><img alt="" src="{{ SITEURL }}/logo.png">
+            <span><span>EF*CK —</span><span>Emoji Filter / Unicode Chat Keyboard</span></span></a>
+        <nav>
+            <ul id="menu">
+            {% for p in pages | rejectattr('hide_in_menu') %}
+                <li{% if p == page %} class="active"{% endif %}><a data-icon="{{p.icon}}" href="{{ SITEURL }}/{{ p.url }}">{{ p.short_name or p.title }}</a></li>
+            {% endfor %}
+            </ul>
+        </nav>
+    </header>
+    <div class="bg-icon" style="background: url('{{ SITEURL }}/{{ THEME_STATIC_DIR }}/{{ page.bg_file }}')"></div>
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer>
+        <p>{{ content_obj.quote }}</p>
+        <div class="attribution"><span>M<i>ade</i></span> <span class="with">w<i>ith</i></span> <i class="heart" aria-label="love" role="img">♥</i> 41 <span>NV</span>
+        </div>
+        <span class="signature">&#21328;</span>
+    </footer>
+    {% block foot %}{% endblock %}
+</body>
+</html>

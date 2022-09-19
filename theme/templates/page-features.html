@@ -1,0 +1,21 @@
+{% extends "page.html" %}
+
+
+{% block head %}
+<style>
+    h2 {margin-top: 3em}
+    .bg-icon {opacity: .5}
+
+    .fuzzy-box:after {background-color: goldenrod;}
+    .fuzzy-box:before {background-color: gold;}
+</style>
+<style media="screen and (min-width: 790px)">
+    h2:not(:first-of-type) {margin-top: 8em}
+    main .p {
+        display: flex;
+        flex-direction: row;
+        gap: 2em;
+        align-items: center;
+    }
+</style>
+{% endblock %}

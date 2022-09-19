@@ -1,0 +1,26 @@
+{% extends "page.html" %}
+
+
+{% block title %}{{ SITENAME }} – {{ SITEDESC }}{% endblock %}
+
+
+{% block head %}
+<style>
+    .features li::marker {font-size: 1.5em;}
+    .features li {margin-bottom: 1em;}
+    .features li:last-child {margin-bottom: 0em;}
+    .features + p {margin-top: 1em;}
+
+    main h1 {display: none}
+    nav {margin-bottom: 4em;}
+</style>
+
+<style media="screen and (min-width: 790px)">
+    .features {
+        display: flex;
+        gap: 4em;
+        align-items: center;
+    }
+</style>
+{% endblock %}
+

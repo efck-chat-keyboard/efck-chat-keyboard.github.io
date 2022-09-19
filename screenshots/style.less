@@ -1,0 +1,328 @@
+/*--------------------
+Mixins
+--------------------*/
+.mixin-vcenter {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.mixin-center {
+  .mixin-vcenter();
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.mixin-ball {
+  .mixin-center();
+  content: '';
+  display: block;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background: black;
+  z-index: 2;
+  margin-top: 4px;
+  animation: ball .45s cubic-bezier(0, 0, 0.15, 1) alternate infinite;
+}
+
+
+/*--------------------
+Body
+--------------------*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: 'DejaVu Sans', 'Noto Color Emoji', serif;  // DejaVu Sans lovely with strikethrough
+  font-size: 12px;
+  line-height: 1.3;
+  overflow: hidden;
+  background: darkblue;
+}
+
+
+/*--------------------
+Chat
+--------------------*/
+.chat {
+  position: absolute;
+  bottom: 23px;
+  right: 30px;
+  width: 300px;
+  height: 80vh;
+  max-height: 500px;
+  z-index: 2;
+  overflow: hidden;
+  //box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  background: #eee;
+  border: 1px solid silver;
+  border-radius: 20px 20px 0 0;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+
+/*--------------------
+Chat Title
+--------------------*/
+.chat-title {
+  flex: 0 1 45px;
+  position: relative;
+  z-index: 2;
+  background: #ddd;
+  color: #333;
+  text-align: left;
+  padding: 10px 10px 10px 50px;
+  border-bottom: 1px solid silver;
+
+  h1, h2 {
+    font-weight: normal;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    line-height: 1.2em;
+  }
+
+  h2 {
+    color: #555;
+    font-size: 8px;
+    letter-spacing: 1px;
+  }
+
+  .avatar {
+    position: absolute;
+    z-index: 1;
+    top: 8px;
+    left: 9px;
+    border-radius: 30px;
+    width: 30px;
+    height: 30px;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    border: 2px solid dimgrey;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
+
+/*--------------------
+Messages
+--------------------*/
+.messages {
+  flex: 1 1 auto;
+  color: #222;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+
+  .messages-content {
+    height: 100%;
+    width: 100%;
+    padding: 0 10px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    scrollbar-color: silver transparent;
+    scrollbar-width: thin;
+
+    &::-webkit-scrollbar {width: 5px;height: 8px;background-color: transparent;}
+    &::-webkit-scrollbar-thumb {background: silver;}
+  }
+
+  .message {
+    clear: both;
+    float: left;
+    padding: 6px 10px 7px;
+    border-radius: 10px 10px 10px 0;
+    background: #dcc;
+    margin: 8px 0;
+    font-size: 11px;
+    line-height: 1.4;
+    margin-left: 35px;
+    position: relative;
+    max-width: 80%;
+
+    &-font-large {
+      font-size: 30px;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      bottom: -6px;
+      border-top: 6px solid #dcc;
+      left: 0;
+      border-right: 7px solid transparent;
+    }
+
+    .timestamp {
+      position: absolute;
+      bottom: -15px;
+      font-size: 9px;
+      color: dimgrey;
+    }
+
+    .avatar {
+      position: absolute;
+      z-index: 1;
+      bottom: -7px;
+      left: -35px;
+      border-radius: 30px;
+      width: 30px;
+      height: 30px;
+      overflow: hidden;
+      margin: 0;
+      padding: 0;
+      border: 2px solid dimgrey;
+    }
+
+    &.message-personal {
+      float: right;
+      color: #fff;
+      text-align: right;
+      background: slategrey;
+      border-radius: 10px 10px 0 10px;
+
+      .timestamp {right: 10px;}
+
+      &::before {
+        left: auto;
+        right: 0;
+        border-right: none;
+        border-left: 5px solid transparent;
+        border-top: 4px solid slategray;
+        bottom: -4px;
+      }
+    }
+
+    &:last-child {
+      margin-bottom: 30px;
+    }
+
+    &.new {
+      transform: scale(0);
+      transform-origin: 0 0;
+      animation: bounce 500ms linear both;
+    }
+
+    &.loading {
+
+      &::before {
+        .mixin-ball();
+        border: none;
+        animation-delay: .15s;
+      }
+
+      & span {
+        display: block;
+        font-size: 0;
+        width: 20px;
+        height: 10px;
+        position: relative;
+
+        &::before {
+          .mixin-ball();
+          margin-left: -7px;
+        }
+
+        &::after {
+          .mixin-ball();
+          margin-left: 7px;
+          animation-delay: .3s;
+        }
+      }
+    }
+
+  }
+}
+
+.message-personal + .message-personal,
+.theirs + .theirs {
+  margin-top: 4px;
+}
+
+
+/*--------------------
+Message Box
+--------------------*/
+.message-box {
+  flex: 0 1 40px;
+  width: 100%;
+  background: #fff;
+  padding: 10px;
+  position: relative;
+  display: inline-flex;
+  border-top: 1px solid silver;
+
+  .message-input {
+    .mixin-vcenter();
+    background: none;
+    border: none;
+    outline: none!important;
+    resize: none;
+    color: black;
+    font-size: 11px;
+    height: 17px;
+    margin: 0;
+    width: calc(100% - 6ch);
+  }
+
+  //textarea:focus::placeholder{
+  //    color: transparent;
+  //}
+
+  .message-submit {
+    .mixin-vcenter();
+    left:.3em;
+    color: silver;
+    border: none;
+    background: none;
+    font-size: 30px;
+    line-height: 0;
+    outline: none!important;
+
+    &:active {
+      background: darkseagreen;
+    }
+  }
+}
+
+
+/*--------------------
+Bounce
+--------------------*/
+@keyframes bounce {
+  0% { transform: matrix3d(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  4.7% { transform: matrix3d(0.45, 0, 0, 0, 0, 0.45, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  9.41% { transform: matrix3d(0.883, 0, 0, 0, 0, 0.883, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  14.11% { transform: matrix3d(1.141, 0, 0, 0, 0, 1.141, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  18.72% { transform: matrix3d(1.212, 0, 0, 0, 0, 1.212, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  24.32% { transform: matrix3d(1.151, 0, 0, 0, 0, 1.151, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  29.93% { transform: matrix3d(1.048, 0, 0, 0, 0, 1.048, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  35.54% { transform: matrix3d(0.979, 0, 0, 0, 0, 0.979, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  41.04% { transform: matrix3d(0.961, 0, 0, 0, 0, 0.961, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  52.15% { transform: matrix3d(0.991, 0, 0, 0, 0, 0.991, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  63.26% { transform: matrix3d(1.007, 0, 0, 0, 0, 1.007, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  85.49% { transform: matrix3d(0.999, 0, 0, 0, 0, 0.999, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  100% { transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+}
+
+
+@keyframes ball {
+  from {transform: translateY(0) scaleY(.7);}
+  to {transform: translateY(-10px);}
+}
