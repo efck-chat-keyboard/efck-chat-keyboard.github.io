@@ -11,7 +11,9 @@
     }
     window.addEventListener('load', () => {
         let details = document.querySelector(getOS());
-        if (details) {
+        if (details &&
+                !navigator.userAgentData?.mobile &&
+                !/Mobile|Android/.test(navigator.userAgent)) {
             details.open = true;
             details.parentElement.insertBefore(details, details.parentElement.firstChild);
         }

@@ -57,8 +57,8 @@ with built-in:
 </div>
 
 **Easily [extensible]({filename}/pages/faq.md#extending)
-(Python, Qt)
-with custom tabs** with custom actions and launchers. 🐍
+(Python, Qt) 🐍
+with custom tabs** for custom actions and launchers.
 
 **EFCK is known to work with most other
 desktop applications**, namely:

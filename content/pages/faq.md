@@ -242,8 +242,6 @@ Log file location is
 where variable `$TMPDIR` is resolved as per the algorithm of
 [Python's `tempfile.gettempdir()`](https://docs.python.org/3/library/tempfile.html#tempfile.gettempdir)
 function.
-
-On macOS, the log file may also be `~/.cache/efck-chat-keyboard.log`.
 </details>
 
 

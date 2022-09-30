@@ -63,8 +63,8 @@ if you know it.
 </div>
 
 
-GIF that funny meme some drag ...
----------------------------------
+GIF that funny meme a drag ...
+------------------------------
 <div class="p" style="display: block" markdown="1">
 **Search through only the best memes** from all over the internet
 (particularly from the GIF meme providers)
