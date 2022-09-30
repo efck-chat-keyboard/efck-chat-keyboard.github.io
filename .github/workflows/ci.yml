@@ -24,6 +24,7 @@ jobs:
 
       - run: pip install -r requirements.txt
       - run: pelican -vD --fatal warnings
+      - run: scripts/minify.sh output
 
       - name: Checkout gh-pages
         if: ${{ github.event_name == 'push' }}
