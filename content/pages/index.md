@@ -3,7 +3,7 @@ url:
 save_as: index.html
 hide_in_menu: 1
 template: page-index
-description: 
+description: EF*CK is a cross-platform free and open-source desktop on-screen emoji keyboard with built-in emoji picker, text transforms, and GIF meme search.
 bg_file: emoji_u1f973_party.svg
 quote: <q>Nothing ever becomes real till it is experienced – even a proverb is no proverb to you till your life has illustrated it.</q><br>— John Keats
 
@@ -28,6 +28,8 @@ locking their consumer users forever more in.
 And today you can't influence the 
 sort order of your online friends in an app like Facebook. 😠
 
+<div itemprop="description" class="p description" markdown="1">
+
 **Emoji filter / Unicode chat keyboard**
 (also **EFUCK**, or **EF*CK** if you will rather politely, 
 or mere **EFCK** for short)
@@ -50,7 +52,8 @@ with built-in:
   instantly available to drag and drop in the comfort of your 
   familiar desktop environment;
 
-<div class="screenshot"><img alt="app screenshot" class="screenshot" loading="lazy" src="{static}/images/screenshot.png"></div>
+<div class="screenshot"><img alt="app screenshot" class="screenshot" itemprop="screenshot" loading="lazy" src="{static}/images/screenshot.png"></div>
+</div>
 </div>
 
 **Easily [extensible]({filename}/pages/faq.md#extending)

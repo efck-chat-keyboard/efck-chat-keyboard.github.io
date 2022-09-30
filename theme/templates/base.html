@@ -1,7 +1,7 @@
 <!doctype html>
 {% set content_obj = article or page %}
 {% set lang = content_obj.lang %}
-<html lang="{{ lang }}">
+<html lang="{{ lang }}" itemscope itemtype="https://schema.org/SoftwareApplication">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,12 +24,28 @@
 
     <meta name="theme-color" content="#eef">
 
+    <meta itemprop="applicationCategory" content="DesktopEnhancementApplication">
+    <meta itemprop="applicationCategory" content="CommunicationApplication">
+    <meta itemprop="applicationSubCategory" content="Emoji Keyboard">
+    <meta itemprop="operatingSystem" content="Windows">
+    <meta itemprop="operatingSystem" content="macOS">
+    <meta itemprop="operatingSystem" content="Linux">
+    <meta itemprop="isAccessibleForFree" content="True">
+    <meta itemprop="license" content="">
+    <meta itemprop="alternateName" content="efck">
+    <meta itemprop="alternateName" content="EF*CK">
+    <meta itemprop="alternateName" content="EFUCK">
+    <meta itemprop="alternateName" content="emoji keyboard">
+    <meta itemprop="sameAs" content="https://github.com/efck-chat-keyboard">
+    <meta itemprop="sameAs" content="https://github.com/efck-chat-keyboard/efck">
+    <meta itemprop="url" content="/">
+
     {% block head %}{% endblock %}
 </head>
 <body>
     <header>
         <a href="{{ SITEURL }}/" rel="home"><img alt="" src="{{ SITEURL }}/logo.png">
-            <span><span>EF*CK —</span><span>Emoji Filter / Unicode Chat Keyboard</span></span></a>
+            <span itemprop="name"><span>EF*CK —</span><span>Emoji Filter / Unicode Chat Keyboard</span></span></a>
         <nav>
             <ul id="menu">
             {% for p in pages | rejectattr('hide_in_menu') %}

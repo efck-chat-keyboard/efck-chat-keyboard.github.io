@@ -26,14 +26,14 @@ In case this is unsupported on your
 platform, the emoji is placed into **system clipboard** 📋
 for your immediate use.
 </div>
-<div class="screenshot"><img class="screenshot" loading="lazy" alt="Emoji tab example, a chat-like scenario" src="{static}/images/example-emoji.webp"></div>
+<div class="screenshot"><img class="screenshot" itemprop="screenshot" loading="lazy" alt="Emoji tab example, a chat-like scenario" src="{static}/images/example-emoji.webp"></div>
 </div>
 
 
 Text-to-Unicode transforms
 --------------------------
 <div class="p" markdown="1">
-<div class="screenshot"><img class="screenshot" style="margin-bottom: 2em" loading="lazy" alt="Filters tab example, a chat-like scenario" src="{static}/images/example-filters.webp"></div>
+<div class="screenshot"><img class="screenshot" itemprop="screenshot" style="margin-bottom: 2em" loading="lazy" alt="Filters tab example, a chat-like scenario" src="{static}/images/example-filters.webp"></div>
 <div markdown="1">
 Bring focus and attention to what's important with
 **bold _emphasis_**,
@@ -78,7 +78,7 @@ previewing of GIF reels.
 
 *[UI]: user interface
 
-<div class="screenshot"><img class="screenshot" loading="lazy" alt='GIFs tab example, showing GIFs for query "cute octopus" with the chosen GIF dragged out of the window' src="{static}/images/example-gifs.webp"></div>
+<div class="screenshot"><img class="screenshot" itemprop="screenshot" loading="lazy" alt='GIFs tab example, showing GIFs for query "cute octopus" with the chosen GIF dragged out of the window' src="{static}/images/example-gifs.webp"></div>
 </div>
 
 
@@ -96,7 +96,7 @@ in terms of **custom filters and hook-in custom tabs**. See the relevant
 [FAQ entries]({filename}/pages/faq.md#extending)
 for more info.
 </div>
-<div class="screenshot"><img class="screenshot" loading="lazy" alt="Options tab screenshot" src="{static}/images/screenshot-options.png"></div>
+<div class="screenshot"><img class="screenshot" itemprop="screenshot" loading="lazy" alt="Options tab screenshot" src="{static}/images/screenshot-options.png"></div>
 </div>
 
 
