@@ -1,17 +1,14 @@
 @charset "utf-8";
-
-a[rel="home"] img {margin: 0 2em;}
-a[rel="home"] > span {font-size: 1.4em;}
-a[rel="home"] > span span:first-child {font-size: 2em;}
-.fuzzy-box {font-size: 1.8em;}
-div.screenshot {display: contents;}
-nav ul {
-    display: flex;
-    justify-content: center;
-    gap: 3em;
-}
-nav li {
-    display: flex;
-    gap: .5em;
-    margin: initial;
-}
+a[rel="home"] img{margin: 0 2em}
+a[rel="home"] > span{font-size: 1.4em}
+a[rel="home"] > span span:first-child{font-size: 2em}
+.fuzzy-box{font-size: 1.8em}
+div.screenshot{display: contents}
+nav ul{
+display: flex;
+justify-content: center;
+gap: 3em}
+nav li{
+display: flex;
+gap: .5em;
+margin: initial}
