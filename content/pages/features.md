@@ -18,7 +18,7 @@ and EFCK Chat Keyboard has got them all,
 styled to your preference,
 and with
 automatic resolution of name aliases including
-common shortcodes and custom strings.
+common Slack/GitHub emoji shortcodes and custom strings.
 
 Upon acivation, your chosen emoji is simply
 **pasted in the previously-focused window**.
@@ -30,8 +30,8 @@ for your immediate use.
 </div>
 
 
-Text-to-Unicode transforms
---------------------------
+Unicode text converter
+----------------------
 <div class="p" markdown="1">
 <div class="screenshot"><img class="screenshot" itemprop="screenshot" style="margin-bottom: 2em" loading="lazy" alt="Filters tab example, a chat-like scenario" src="{static}/images/example-filters.webp"></div>
 <div markdown="1">
@@ -51,7 +51,8 @@ or
 <span aria-label="Zalgo">Z̛̳͐̏a̳ͭl̲̹͇ͧ̌͠ģ̗̗ŏ̭͉̩</span>
 for a particular effect.
 
-Custom transforms can be scripted in 
+Many converters are built in, and custom transformers
+can be scripted in
 **literally single lines of Python code**. 🤏
 
 This works in all kinds of apps and all kinds

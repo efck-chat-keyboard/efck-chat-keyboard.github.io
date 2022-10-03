@@ -15,3 +15,7 @@ nav li {
     gap: .5em;
     margin: initial;
 }
+main > p,
+.p p {
+    margin-top: -.7em;
+}

@@ -21,7 +21,7 @@ function open_target_details() {
     document.querySelector(hash).open = true;
     window.location.hash = hash;
 }
-open_target_details();
+window.addEventListener('load', open_target_details);
 window.addEventListener('hashchange', open_target_details);
 
 

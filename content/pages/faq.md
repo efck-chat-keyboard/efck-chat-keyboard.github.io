@@ -196,8 +196,8 @@ What you can do is **update your font to the latest version**.
 <summary><h3>The keyboard <em>never</em> types out the selected emoji ...</h3></summary>
 
 Typing out the text into the previously focused window may not be supported
-on your platform. Typeout was tested working on Linux/X11, macOS and Widows, while it
-didn't work on Wayland (built-in security feature™).
+on your platform. Typeout was tested working on Widosw, macOS and
+Linux/X11 (using xdotool), and Linux/Wayland (using ydotool or wtype).
 </details>
 
 

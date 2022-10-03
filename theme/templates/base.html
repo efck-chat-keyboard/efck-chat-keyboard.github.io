@@ -1,11 +1,10 @@
 <!doctype html>
 {% set content_obj = article or page %}
-{% set lang = content_obj.lang %}
-<html lang="{{ lang }}" itemscope itemtype="https://schema.org/SoftwareApplication">
+<html lang="{{ content_obj.lang }}" itemscope itemtype="https://schema.org/SoftwareApplication">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% block title %}{{ content_obj.title | escape }} – {{ SITENAME }}{% endblock title %}</title>
+    <title>{% block title %}{{ content_obj.title | escape }} – {{ SITEDESC | escape }}{% endblock title %}</title>
     {% if content_obj.description %}
     <meta name="description" content="{{ content_obj.description | escape }}">
     {% endif %}
@@ -26,12 +25,13 @@
 
     <meta itemprop="applicationCategory" content="DesktopEnhancementApplication">
     <meta itemprop="applicationCategory" content="CommunicationApplication">
+    <meta itemprop="applicationCategory" content="SocialNetworkingApplication">
     <meta itemprop="applicationSubCategory" content="Emoji Keyboard">
     <meta itemprop="operatingSystem" content="Windows">
     <meta itemprop="operatingSystem" content="macOS">
     <meta itemprop="operatingSystem" content="Linux">
     <meta itemprop="isAccessibleForFree" content="True">
-    <meta itemprop="license" content="">
+    <meta itemprop="license" content="https://www.gnu.org/licenses/agpl-3.0.txt">
     <meta itemprop="alternateName" content="efck">
     <meta itemprop="alternateName" content="EF*CK">
     <meta itemprop="alternateName" content="EFUCK">
@@ -39,14 +39,24 @@
     <meta itemprop="sameAs" content="https://pypi.org/project/efck/">
     <meta itemprop="sameAs" content="https://github.com/efck-chat-keyboard">
     <meta itemprop="sameAs" content="https://github.com/efck-chat-keyboard/efck">
+    <meta itemprop="isSimilarTo" content="https://emojikeyboard.org/">
+    <meta itemprop="isSimilarTo" content="https://chrome.google.com/webstore/detail/emoji-keyboard-emojis-for/fbcgkphadgmbalmlklhbdagcicajenei/">
+    <meta itemprop="isSimilarTo" content="https://joypixels.com/apps/emoji-keyboard-extension">
+    <meta itemprop="isSimilarTo" content="https://support.microsoft.com/en-us/windows/windows-keyboard-tips-and-tricks-588e0b72-0fff-6d3f-aeee-6e5116097942">
+    <meta itemprop="isSimilarTo" content="https://support.apple.com/guide/mac-help/use-emoji-and-symbols-on-mac-mchlp1560/mac">
     <meta itemprop="url" content="/">
 
     {% block head %}{% endblock %}
 </head>
 <body>
+    <span itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+        <meta itemprop="price" content="0">
+        <meta itemprop="priceCurrency" content="USD">
+    </span>
+
     <header>
         <a href="{{ SITEURL }}/" rel="home"><img alt="" src="{{ SITEURL }}/logo.png">
-            <span itemprop="name"><span>EF*CK —</span><span>Emoji Filter / Unicode Chat Keyboard</span></span></a>
+            <span itemprop="name"><span>EF*CK —</span><span> Emoji Filter / Unicode Chat Keyboard</span></span></a>
         <nav>
             <ul id="menu">
             {% for p in pages | rejectattr('hide_in_menu') %}

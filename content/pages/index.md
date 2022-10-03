@@ -1,4 +1,4 @@
-title: EF*CK – Emoji Filter / Unicode Chat Keyboard
+title: EF*CK
 url:
 save_as: index.html
 hide_in_menu: 1
@@ -11,29 +11,36 @@ Regarding online chat, a brief lucky period of history was
 dominated by a few simple and 
 reliable, extensible and open protocols,
 such as well-known IRC and XMPP. 👽
-Designed by computer scientists and subject to peer review,
+Designed by computer scientists and subject to peer review
+via RFCs,
 available for good use by anyone.
-There were these protocols,
+There were the protocols,
 and there was a multitude of software clients,
 each of which could speak the protocol,
 but could do so in a customized and user-centric
 and tunable manner. 👌
 
+*[IRC]: Internet Relay Chat
+*[XMPP]: Extensible Messaging and Presence Protocol
+*[RFCs]: Request For Comments
+*[protocol]: a set of rules governing the exchange or transmission of data between devices
+
 Then along with the web platform came corporations
 and startups and vendors,
 and they, one by one, switched to 
-secret 👁 and proprietary
-socket-level protocols for chat data interchange,
+secret and proprietary 👁 chat
+protocols and non-interoperable clients,
 locking their consumer users forever more in. 
 And today you can't influence the 
 sort order of your online friends in an app like Facebook. 😠
 
 <div itemprop="description" class="p description" markdown="1">
 
-**Emoji filter / Unicode chat keyboard**
+**<cite>Emoji filter / Unicode chat keyboard</cite>**
 (also **EFUCK**, or **EF*CK** if you will rather politely, 
 or mere **EFCK** for short)
-is a **cross-platform open-source on-screen desktop emoji keyboard**,
+is a **free cross-platform open-source on-screen
+desktop emoji keyboard**,
 with built-in:
 
 *[EFUCK]: Emoji filter / Unicode chat keyboard
@@ -44,13 +51,15 @@ with built-in:
 * **text-filter-based emoji picker**, with customizable
   invocation aliases and emoji modifiers such
   as gender and skin tones; 🙋🏼‍♀️
-* **text-to-Unicode hacks**,
+* **Unicode text converter** with many hacks,
   such as **bold** or <s>strikethrough</s> or
   <i aria-label="Zalgo">Z̛͕̫͉a̟̯̔̊͠l̤ͪg̨ͥo͙̻̦ͣ</i> text effect 
   and many others to **make your text content stand out**;
 * **meme GIF search function** with hundreds of GIFs
   instantly available to drag and drop in the comfort of your 
-  familiar desktop environment;
+  familiar desktop environment.
+
+*[GIF]: Graphics Interchange Format
 
 <div class="screenshot"><img alt="app screenshot" class="screenshot" itemprop="screenshot" loading="lazy" src="{static}/images/screenshot.png"></div>
 </div>
@@ -60,7 +69,7 @@ with built-in:
 (Python, Qt) 🐍
 with custom tabs** for custom actions and launchers.
 
-**EFCK is known to work with most other
+**EFCK is known to work with most
 desktop applications**, namely:
 web browsers and, within them, web apps like 
 Gmail, Facebook, Messenger, Instagram, WhatsApp,
