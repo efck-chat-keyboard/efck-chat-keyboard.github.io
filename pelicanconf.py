@@ -20,7 +20,7 @@ SITEDESC = 'Emoji Filter / Unicode Chat Keyboard'
 
 PATH = 'content'
 OUTPUT_PATH = 'output/'
-READERS = dict(rst=None)  # Disable docutils/reST
+READERS = dict(rst=None, html=None)  # Disable docutils/reST, disable interpreting HTML redirects
 
 TIMEZONE = 'Europe/London'
 
@@ -49,8 +49,6 @@ DIRECT_TEMPLATES = ['index']
 
 SLUGIFY_SOURCE = 'basename'
 
-ARTICLE_URL = '{title}/'
-ARTICLE_SAVE_AS = ARTICLE_URL + 'index.html'
 PAGE_URL = '{slug}/'
 PAGE_SAVE_AS = PAGE_URL + 'index.html'
 
@@ -93,6 +91,6 @@ STATIC_PATHS = [
     'static',
 ]
 EXTRA_PATH_METADATA = {
+    'static/dl': {'path': 'dl/'},
     'static': {'path': ''},
 }
-

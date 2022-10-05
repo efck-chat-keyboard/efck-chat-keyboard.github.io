@@ -15,7 +15,7 @@ Windows</summary>
 Windows installer EXE,
 21 MB
 
-[Download](https://github.com/efck-chat-keyboard/efck/releases)
+[Download](/dl/win.html)
 
 #### Installation Notes
 
@@ -32,8 +32,10 @@ macOS package, 21 MB, flexible pricing:
 <script>
 let [f, input, btn] = document.querySelectorAll('#buy-form, #buy-form input, #buy-form button');
 input.addEventListener('change', () => { btn.innerHTML = input.value > 0 ? 'Buy for $' + input.value : 'Download for free' });
-f.addEventListener('submit', () => { if (input.value <= 0) f.action = 'https://github.com/efck-chat-keyboard/efck/releases' });
+f.addEventListener('submit', () => { if (input.value <= 0) f.action = '/dl/mac.html' });
 </script>
+<small>Donations are processed by BuyMeACoffee.com.</small>
+{: style="margin:0"}
 
 <hr style="margin-top:4em">
 
@@ -93,7 +95,7 @@ GNU/Linux</summary>
 Linux binary x64 archive (X11/Wayland),
 43 MB
 
-[Download](https://github.com/efck-chat-keyboard/efck/releases)
+[Download](/dl/linux.html)
 </details>
 
 
