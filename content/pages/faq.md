@@ -196,8 +196,11 @@ What you can do is **update your font to the latest version**.
 <summary><h3>The keyboard <em>never</em> types out the selected emoji ...</h3></summary>
 
 Typing out the text into the previously focused window may not be supported
-on your platform. Typeout was tested working on Widosw, macOS and
+on your platform. Typeout was tested working on Widosw, macOS,
 Linux/X11 (using xdotool), and Linux/Wayland (using ydotool or wtype).
+
+If it's not working for you on one of these platforms, please
+[submit a bug report](#bug-report).
 </details>
 
 
@@ -245,7 +248,7 @@ function.
 </details>
 
 
-<details markdown="1">
+<details id="bug-report" markdown="1">
 <summary><h3>Reporting bugs / issues</h3></summary>
 Please report bugs on the [issue tracker on GitHub](https://github.com/efck-chat-keyboard/efck/issues).
 Please kindly revise
