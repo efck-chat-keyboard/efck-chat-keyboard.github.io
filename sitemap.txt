@@ -1,4 +1,4 @@
-/
-/download/
-/faq/
-/features/
+https://efck-chat-keyboard.github.io/
+https://efck-chat-keyboard.github.io/download/
+https://efck-chat-keyboard.github.io/faq/
+https://efck-chat-keyboard.github.io/features/

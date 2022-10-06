@@ -1,2 +1,4 @@
 User-agent: *
 Disallow: /dl
+
+Sitemap: https://efck-chat-keyboard.github.io/sitemap.txt
