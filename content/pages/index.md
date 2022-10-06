@@ -53,7 +53,7 @@ with built-in:
   as gender and skin tones; 🙋🏼‍♀️
 * **Unicode text converter** with many hacks,
   such as **bold** or <s>strikethrough</s> or
-  <i aria-label="Zalgo">Z̛͕̫͉a̟̯̔̊͠l̤ͪg̨ͥo͙̻̦ͣ</i> text effect 
+  <i aria-label="Zalgo" role="img">Z̛͕̫͉a̟̯̔̊͠l̤ͪg̨ͥo͙̻̦ͣ</i> text effect
   and many others to **make your text content stand out**;
 * **meme GIF search function** with hundreds of GIFs
   instantly available to drag and drop in the comfort of your 

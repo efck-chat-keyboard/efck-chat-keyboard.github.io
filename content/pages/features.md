@@ -37,18 +37,18 @@ Unicode text converter
 <div markdown="1">
 Bring focus and attention to what's important with
 **bold _emphasis_**,
-<span aria-label="underlines">u̲n̲d̲e̲r̲l̲i̲n̲e̲s̲</span> or
-<span aria-label="some squares">🆂🄾🄼🄴 🆂🅀🅄🄰🅁🄴🅂</span>,
-<span aria-label="write a letter in handwriting">𝔀𝓻𝓲𝓽𝓮 𝓪 𝓵𝓮𝓽𝓽𝓮𝓻 𝓲𝓷 𝓱𝓪𝓷𝓭𝔀𝓻𝓲𝓽𝓲𝓷𝓰</span>,
-<span aria-label="leetspeak to prune the noobs">l3375p34k 70 prun3 73h n0085</span>,
-<span aria-label="monospace the code">𝚖𝚘𝚗𝚘𝚜𝚙𝚊𝚌𝚎 𝚝𝚑𝚎 𝚌𝚘𝚍𝚎</span>
-<span aria-label="upside down">uʍop ǝpᴉsdn</span>,
+<span aria-label="underlines" role="img">u̲n̲d̲e̲r̲l̲i̲n̲e̲s̲</span> or
+<span aria-label="some squares" role="img">🆂🄾🄼🄴 🆂🅀🅄🄰🅁🄴🅂</span>,
+<span aria-label="write a letter in handwriting" role="img">𝔀𝓻𝓲𝓽𝓮 𝓪 𝓵𝓮𝓽𝓽𝓮𝓻 𝓲𝓷 𝓱𝓪𝓷𝓭𝔀𝓻𝓲𝓽𝓲𝓷𝓰</span>,
+<span aria-label="leetspeak to shake the noobs" role="img">l3375p34k 70 sh4k3 73h n0085</span>,
+<span aria-label="monospace the code" role="img">𝚖𝚘𝚗𝚘𝚜𝚙𝚊𝚌𝚎 𝚝𝚑𝚎 𝚌𝚘𝚍𝚎</span>
+<span aria-label="upside down" role="img">uʍop ǝpᴉsdn</span>,
 <s>strikehrough the changed facts</s>
-<span aria-label="in all kinds of ways"≯i̸n̸ ̸a̸l̸l̸ ̸k̸i̸n̸d̸s̸ ̸o̸f̸ ̸w̸a̸y̸s</span>
+<span aria-label="in all kinds of ways" role="img">i̸n̸ ̸a̸l̸l̸ ̸k̸i̸n̸d̸s̸ ̸o̸f̸ ̸w̸a̸y̸s̸</span>
 or add a touch of
-<span aria-label="Gothic">𝕲𝖔𝖙𝖍𝖎𝖈</span>
+<span aria-label="Gothic" role="img">𝕲𝖔𝖙𝖍𝖎𝖈</span>
 or
-<span aria-label="Zalgo">Z̛̳͐̏a̳ͭl̲̹͇ͧ̌͠ģ̗̗ŏ̭͉̩</span>
+<span aria-label="Zalgo" role="img">Z̛̳͐̏a̳ͭl̲̹͇ͧ̌͠ģ̗̗ŏ̭͉̩</span>
 for a particular effect.
 
 Many converters are built in, and custom transformers
