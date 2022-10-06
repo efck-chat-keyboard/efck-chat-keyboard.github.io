@@ -25,6 +25,7 @@ jobs:
       - run: pip install -r requirements.txt
       - run: pelican -vD --fatal warnings
       - run: scripts/minify.sh output
+      - run: cd output && find -name index.html | sed -e 's/index.html//' -e 's,^\.,https://efck-chat-keyboard.github.io,' | sort > sitemap.txt
 
       - name: Checkout gh-pages
         if: ${{ github.event_name == 'push' }}
