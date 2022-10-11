@@ -1,7 +1,7 @@
 title: FAQ / Docs
 template: page-faq
 bg_file: emoji_u1f937_200d_2642_shrug.svg
-icon: 🤷‍♂️
+icon: 📘
 quote: <q>What we anticipate seldom occurs; what we least expect generally happens.</q><br>— Bengamin Disraeli
 
 ## Basic program operation
@@ -164,7 +164,7 @@ You can force use of a custom emoji font family by setting
 environment variable `ICON_FONT`. E.g.:
 
     export ICON_FONT="Twitter Color Emoji"
-    ./efck-chat-keyboard.run
+    ./efck-chat-keyboard
 
 See instructions how to set environment variables
 [on Linux](https://www.google.com/search?q=set+environment+variable+linux),

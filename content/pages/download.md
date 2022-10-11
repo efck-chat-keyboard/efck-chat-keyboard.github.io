@@ -12,14 +12,12 @@ EFCK Chat Keyboard runs <del>well</del><ins>decently</ins> on all major desktop 
 <summary itemprop="operatingSystem">
 <svg style="width: 2em" xmlns="http://www.w3.org/2000/svg" color="#0078d4" viewBox="0 0 24 24"><path d="M0 0h11.4v11.4H0Zm12.6 0H24v11.4H12.6ZM0 12.6h11.4V24H0Zm12.6 0H24V24H12.6"/></svg>
 Windows</summary>
-Windows installer EXE,
-21 MB
 
-[Download](/dl/win.html)
+[Windows installer EXE](/dl/win.html), 23 MB
 
 #### Installation Notes
 
-Once installed, use <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>.</kbd> to run the program.
+Once installed, use keyboard shortcut <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>.</kbd> to run the program.
 </details>
 
 
@@ -27,7 +25,7 @@ Once installed, use <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>.</kbd> to run the progr
 <summary itemprop="operatingSystem">
 <svg style="width: 2em;" xmlns="http://www.w3.org/2000/svg" color="gray" viewBox="0 0 24 24"><path d="M12.2 6.9c-1 0-2.5-1-4-1-2 0-4 1.1-5 3-2 3.6-.5 9 1.5 12 1 1.5 2.3 3.2 3.8 3.1 1.6 0 2.1-1 4-1 1.8 0 2.3 1 4 1 1.6 0 2.6-1.5 3.6-3a13 13 0 0 0 1.7-3.4 5.3 5.3 0 0 1-.6-9.4 5.6 5.6 0 0 0-4.4-2.4C14.8 5.6 13 7 12.2 7zm3.3-3c.9-1 1.4-2.5 1.3-3.9-1.2 0-2.7.8-3.6 1.8A5 5 0 0 0 12 5.5c1.3.1 2.7-.7 3.5-1.7"/></svg>
 macOS</summary>
-macOS package, 21 MB, flexible pricing:
+macOS package, 25 MB, flexible pricing:
 <form id="buy-form" action="https://www.buymeacoffee.com/__k_"><label>💲 <input type="number" value="5" min=0 style="width: 7ch"></label> <button type="submit">Buy for $5</button></form>
 <script>
 let [f, input, btn] = document.querySelectorAll('#buy-form, #buy-form input, #buy-form button');
@@ -41,7 +39,13 @@ f.addEventListener('submit', () => { if (input.value <= 0) f.action = '/dl/mac.h
 
 #### Installation Notes
 
-Since the free and open source package doesn't want to pay $99
+Post installation, it is recommended to
+[assign a keyboard shortcut](https://support.apple.com/en-gu/guide/mac-help/mchlp2271/mac),
+such as <kbd>Ctrl</kbd>+<kbd>Cmd</kbd>+<kbd>Space</kbd>
+or <kbd>Ctrl</kbd>+<kbd>Cmd</kbd>+<kbd>.</kbd>,
+to launch the app.
+
+Since the free and open-source package doesn't want to pay $99
 annual fee for the _Apple Developer Program_,
 the release package is not cryptographically signed,
 and you may encounter a blocker such as:
@@ -92,10 +96,27 @@ _Apple Developer Program_.
 <summary itemprop="operatingSystem" markdown="1">
 ![ ]({static}/images/linux.webp){: style="width: 2em;"}
 GNU/Linux</summary>
-Linux binary x64 archive (X11/Wayland),
-43 MB
 
-[Download](/dl/linux.html)
+[Generic GNU/Linux x64 binary archive](/dl/linux.html) (X11/Wayland), 54 MB
+
+[Debian / Ubuntu / Linux Mint DEB package](/dl/debian.html), 150 kB
+
+Installation Notes
+------------------
+If on **X11**, additionally install package _**xdotool**_, e.g.
+
+    sudo apt install xdotool
+
+If on **Wayland**, additionally install package _**ydotool**_, e.g.
+
+    sudo apt install ydotool
+
+It is recommended to
+assign a keyboard shortcut
+such as <kbd>Win</kbd>+<kbd>.</kbd>
+or <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>.</kbd>
+to execute `efck-chat-keyboard`.
+
 </details>
 
 
@@ -107,7 +128,13 @@ You can install
 [EFCK from PyPI](https://pypi.org/project/efck/)
 via:
 
-    pip install efck
+    pip install 'efck[extra]'
+
+    # Additionally, install preferred Qt
+    pip install pyqt6  # or pyside6 or pyqt5
+
+    # Run
+    python -m efck
 
 *[PyPI]: Python Package Index
 
