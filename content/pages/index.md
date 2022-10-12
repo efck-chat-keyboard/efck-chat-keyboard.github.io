@@ -7,6 +7,7 @@ description: EF*CK is a cross-platform free and open-source desktop on-screen em
 bg_file: emoji_u1f973_party.svg
 quote: <q>Nothing ever becomes real till it is experienced – even a proverb is no proverb to you till your life has illustrated it.</q><br>— John Keats
 
+<aside class="p" markdown="1">
 Regarding online chat, a brief lucky period of history was
 dominated by a few simple and 
 reliable, extensible and open protocols,
@@ -33,6 +34,7 @@ protocols and non-interoperable clients,
 locking their consumer users forever more in. 
 And today you can't influence the 
 sort order of your online friends in an app like Facebook. 😠
+</aside>
 
 <div itemprop="description" class="p description" markdown="1">
 
