@@ -32,8 +32,8 @@ and they, one by one, switched to
 secret and proprietary 👁 chat
 protocols and non-interoperable clients,
 locking their consumer users forever more in. 
-And today you can't influence the 
-sort order of your online friends in an app like Facebook. 😠
+And today, you can't influence the
+sort order of your online friends in an app like Facebook! 😠
 </aside>
 
 <div itemprop="description" class="p description" markdown="1">
