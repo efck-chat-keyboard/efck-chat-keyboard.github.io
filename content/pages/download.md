@@ -13,7 +13,7 @@ EFCK Chat Keyboard runs <del>well</del><ins>decently</ins> on all major desktop 
 <svg style="width: 2em" xmlns="http://www.w3.org/2000/svg" color="#0078d4" viewBox="0 0 24 24"><path d="M0 0h11.4v11.4H0Zm12.6 0H24v11.4H12.6ZM0 12.6h11.4V24H0Zm12.6 0H24V24H12.6"/></svg>
 Windows</summary>
 
-[Windows installer EXE](/dl/win.html), 23 MB
+[Windows installer EXE](/dl/win.html){: target=_blank}, 23 MB
 
 #### Installation Notes
 
@@ -30,7 +30,7 @@ macOS package, 25 MB, flexible pricing:
 <script>
 let [f, input, btn] = document.querySelectorAll('#buy-form, #buy-form input, #buy-form button');
 input.addEventListener('change', () => { btn.innerHTML = input.value > 0 ? 'Buy for $' + input.value : 'Download for free' });
-f.addEventListener('submit', () => { if (input.value <= 0) f.action = '/dl/mac.html' });
+f.addEventListener('submit', () => { if (input.value <= 0) { f.action = '/dl/mac.html'; f.target = "_blank"; } });
 </script>
 <small>Donations are processed by BuyMeACoffee.com.</small>
 {: style="margin:0"}
@@ -97,9 +97,9 @@ _Apple Developer Program_.
 ![ ]({static}/images/linux.webp){: style="width: 2em;"}
 GNU/Linux</summary>
 
-[Generic GNU/Linux x64 binary archive](/dl/linux.html) (X11/Wayland), 54 MB
+[Generic GNU/Linux x64 binary archive](/dl/linux.html){: target=_blank} (X11/Wayland), 54 MB
 
-[Debian / Ubuntu / Linux Mint DEB package](/dl/debian.html), 150 kB
+[Debian / Ubuntu / Linux Mint DEB package](/dl/debian.html){: target=_blank}, 150 kB
 
 Installation Notes
 ------------------
