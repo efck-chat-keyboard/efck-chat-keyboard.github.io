@@ -262,8 +262,9 @@ in particular, see
 
 <details markdown="1" id="custom-tabs">
 <summary><h3>How do I make custom tabs?</h3></summary>
-**EFCK is written in Python programming language
-and based on Qt widget framework**, so you'll need some grasp of both.
+**EFCK is written in [Python programming language](https://www.python.org)
+and based on [Qt widget framework](https://doc.qt.io/qtforpython/)**,
+so you'll need some grasp of both.
 In order to write a custom tab, simply extend
 [`efck.tab.Tab`](https://github.com/efck-chat-keyboard/efck/blob/master/efck/tab.py)
 class in your module file that you put in your
@@ -272,7 +273,7 @@ class in your module file that you put in your
 
 See [bundled tabs](https://github.com/efck-chat-keyboard/efck/tree/master/efck/tabs)
 for code inspiration and don't hesitate to
-drop by the discussion forum if you think you need help.
+drop by the discussion forum if you decide you need help.
 </details>
 
 

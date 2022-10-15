@@ -113,7 +113,8 @@ If on **Wayland**, additionally install package _**ydotool**_, e.g.
 
 It is recommended to
 assign a keyboard shortcut
-such as <kbd>Win</kbd>+<kbd>.</kbd>
+such as <kbd>Win</kbd>+<kbd>.</kbd>,
+<kbd>Ctrl</kbd>+<kbd>.</kbd>
 or <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>.</kbd>
 to execute `efck-chat-keyboard`.
 
