@@ -12,7 +12,7 @@ div.screenshot {text-align: center;}
 .attribution .with:after {content: '/ '}
 .attribution span + span {margin-left: -5px}
 .attribution span i {font-size: 1px; letter-spacing: -.5px; display:inline-block; transform: scale(.1); filter: blur(20px); zoom: .1}
-.signature {color:#ffe; margin:-2em auto; position: relative; right: -48vw;}
+.signature {--darkreader-inline-color: #111 !important; margin:-2em auto; position: relative; right: -48vw;}
 @keyframes blink {0%{opacity:1} 50%{opacity:0} 100%{opacity:1}}
 @media (prefers-reduced-motion) { *, *:before, *:after {animation: none !important} }
 kbd {
