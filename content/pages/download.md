@@ -17,7 +17,25 @@ Windows</summary>
 
 #### Installation Notes
 
-Once installed, use keyboard shortcut <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>.</kbd> to run the program.
+Once installed, use **keyboard shortcut**
+<kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>.</kbd> to run the program.
+
+Since the free and open-source package doesn't want to pay
+the fees associated with _Microsoft Developer Account_,
+the release package is not cryptographically signed,
+and you may encounter a blocker dialog window such as:
+
+![Windows protected your PC — Microsoft Defender ... prevented an unrecognized app from starting.]({static}/images/windos-1.png){:.screenshot loading=lazy}
+{:.center}
+
+In order to circumvent it, click on **More info** link, and
+then on **Run anyway**.
+
+![Windows protected your PC ... Publisher: Unknown publisher]({static}/images/windos-2.png){:.screenshot loading=lazy}
+{:.center}
+
+Once program sales permit it, we will consider obtaining
+_Microsoft Developer Account_.
 </details>
 
 
@@ -40,7 +58,7 @@ f.addEventListener('submit', () => { if (input.value <= 0) { f.action = '/dl/mac
 #### Installation Notes
 
 Post installation, it is recommended to
-[assign a keyboard shortcut](https://support.apple.com/en-gu/guide/mac-help/mchlp2271/mac),
+[assign a **keyboard shortcut**](https://support.apple.com/en-gu/guide/mac-help/mchlp2271/mac),
 such as <kbd>Ctrl</kbd>+<kbd>Cmd</kbd>+<kbd>Space</kbd>
 or <kbd>Ctrl</kbd>+<kbd>Cmd</kbd>+<kbd>.</kbd>,
 to launch the app.
@@ -87,7 +105,7 @@ _add it again_ for good measure:
 Without this permission, the activated item would instead
 be placed into your clipboard.
 
-Once sales permit it, we will consider joining
+Once program sales permit it, we will consider joining
 _Apple Developer Program_.
 </details>
 
@@ -112,7 +130,7 @@ If on **Wayland**, additionally install package _**ydotool**_, e.g.
     sudo apt install ydotool
 
 It is recommended to
-assign a keyboard shortcut
+assign a **keyboard shortcut**
 such as <kbd>Win</kbd>+<kbd>.</kbd>,
 <kbd>Ctrl</kbd>+<kbd>.</kbd>
 or <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>.</kbd>
@@ -136,6 +154,8 @@ via:
 
     # Run
     python -m efck
+    # or
+    efck-chat-keyboard
 
 *[PyPI]: Python Package Index
 
