@@ -11,7 +11,6 @@ div.screenshot{text-align: center}
 .with:after{content: '/ '}
 .signature{--darkreader-inline-color: #111 !important; margin:-2em auto; position: relative; right: -48vw}
 @keyframes blink{0%{opacity:1} 50%{opacity:0} 100%{opacity:1}}
-@media (prefers-reduced-motion){ *, *:before, *:after{animation: none !important} }
 kbd{
 border: 1px solid #888;
 border-right-width: 3px;
