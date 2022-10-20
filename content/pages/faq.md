@@ -269,11 +269,20 @@ In order to write a custom tab, simply extend
 [`efck.tab.Tab`](https://github.com/efck-chat-keyboard/efck/blob/master/efck/tab.py)
 class in your module file that you put in your
 [config dir](#config-home)
-"tabs" subdirectory (create it if doesn't exist).
+"tabs" subdirectory (create it if doesn't exist,
+or if the whole app config directory doesn't exist,
+simply run `efck-chat-keyboard` for the first time
+to create it).
+Any `Tab`-extending class will be automatically
+picked up by the app.
 
 See [bundled tabs](https://github.com/efck-chat-keyboard/efck/tree/master/efck/tabs)
 for code inspiration and don't hesitate to
 drop by the discussion forum if you decide you need help.
+
+If you write a custom feature tab that you consider may
+endure wider interest of the public, please don't hesitate
+to submit it for reference / promotion / inclusion.
 </details>
 
 
