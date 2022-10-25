@@ -8,7 +8,9 @@ img.screenshot{filter: drop-shadow(0 0 .33em darkgray); margin: auto}
 div.screenshot{text-align: center}
 .attribution{color: gray; font-family: monospace; user-select: none}
 .attribution .heart{color:#a0f; font-size:14pt; vertical-align: middle; animation:blink normal 1.2s infinite linear}
-.with:after{content: '/ '}
+.attribution .with:after{content: '/ '}
+.attribution span + span{margin-left: -5px}
+.attribution span i{font-size: 1px; letter-spacing: -.5px; display:inline-block; transform: scale(.1); filter: blur(20px); zoom: .1}
 .signature{--darkreader-inline-color: #111 !important; margin:-2em auto; position: relative; right: -48vw}
 @keyframes blink{0%{opacity:1} 50%{opacity:0} 100%{opacity:1}}
 kbd{
