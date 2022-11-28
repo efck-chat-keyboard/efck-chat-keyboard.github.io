@@ -15,13 +15,15 @@ Windows</summary>
 
 [Windows installer EXE](/dl/win.html){: target=_blank}, 23 MB
 
+<hr style="margin-top:4em">
+
 #### Installation Notes
 
 Once installed, use **keyboard shortcut**
 <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>.</kbd> to run the program.
 
 Since the free and open-source package doesn't want to pay
-the fees associated with _Microsoft Developer Account_,
+the **fees associated with _Microsoft Developer Account_**,
 the release package is not cryptographically signed,
 and you may encounter a blocker dialog window such as:
 
@@ -35,7 +37,7 @@ then on **Run anyway**.
 {:.center}
 
 Once program sales permit it, we will consider obtaining
-_Microsoft Developer Account_.
+_Microsoft Developer Account_. 🕴
 </details>
 
 
@@ -64,7 +66,7 @@ or <kbd>Ctrl</kbd>+<kbd>Cmd</kbd>+<kbd>.</kbd>,
 to launch the app.
 
 Since the free and open-source package doesn't want to pay $99
-annual fee for the _Apple Developer Program_,
+**annual fees for the _Apple Developer Program_**,
 the release package is not cryptographically signed,
 and you may encounter a blocker such as:
 
@@ -106,7 +108,7 @@ Without this permission, the activated item would instead
 be placed into your clipboard.
 
 Once program sales permit it, we will consider joining
-_Apple Developer Program_.
+_Apple Developer Program_. 🕴
 </details>
 
 
@@ -119,8 +121,10 @@ GNU/Linux</summary>
 
 [Debian / Ubuntu / Linux Mint DEB package](/dl/debian.html){: target=_blank}, 150 kB
 
-Installation Notes
-------------------
+<hr style="margin-top:4em">
+
+#### Installation Notes
+
 If on **X11**, additionally install package _**xdotool**_, e.g.
 
     sudo apt install xdotool
