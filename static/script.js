@@ -11,10 +11,6 @@ a.setAttribute('rel', `${rel} external`);
 a.setAttribute('target', '_blank');
 }
 });
-let attr = document.getElementsByClassName('attribution')[0];
-console.log(attr.innerHTML);
-attr.innerHTML = attr.innerHTML.replace('<span>NV</span>', '<span>N<i>ina</i></span> <span>V<i>rbinc</i></span>');
-console.log(attr.innerHTML);
 });
 function open_target_details() {
 let hash = window.location.hash;
