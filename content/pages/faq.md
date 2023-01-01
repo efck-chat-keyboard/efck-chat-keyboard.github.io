@@ -156,7 +156,7 @@ therefore one might as well just stick with platform defaults.
 </details>
 
 
-<details markdown="1">
+<details markdown="1" id="custom-font">
 <summary><h3>How do I use a custom emoji font?</h3></summary>
 By default, EFCK uses platform-default emoji font,
 with fallback alternatives configured as are known to be supported.
