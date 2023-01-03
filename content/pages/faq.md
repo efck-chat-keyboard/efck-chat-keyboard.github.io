@@ -178,7 +178,7 @@ See here for [emoji font alternatives](#fonts).
 
 ## Troubleshooting and debugging
 
-<details markdown="1">
+<details markdown="1" id="empty-glyphs">
 <summary><h3>Some emoji glyphs are white / empty / placeholder / missing ...</h3></summary>
 EFCK ships with official emoji sequences for the
 [latest Unicode Standard](https://www.unicode.org/versions/latest/).
