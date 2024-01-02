@@ -66,7 +66,7 @@ but everything else).
 
 <details markdown="1" id="config-home">
 <summary><h3>Where are program configuration / extensions kept?</h3></summary>
-EFCK stores it's files in user's local config home folder.
+EFCK stores its files in user's local config home folder.
 This location is platform dependent:
 
 * **Windos**:  
