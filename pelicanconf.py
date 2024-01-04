@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+import glob
 
 ## Development ######################################################
 
@@ -91,6 +92,7 @@ STATIC_PATHS = [
     'static',
 ]
 EXTRA_PATH_METADATA = {
-    'static/dl': {'path': 'dl/'},
-    'static': {'path': ''},
+    # Copy /static/* to /*
+    **{fname: {'path': fname[len('static/'):]}
+       for fname in glob.glob('static/**', root_dir=PATH, recursive=True)},
 }
