@@ -82,6 +82,17 @@ In all above cases, `{APP_NAME}` stands for `"efck-chat-keyboard"`.
 </details>
 
 
+<details markdown="1" id="config-home">
+<summary><h3>Customization via environment variables ...</h3></summary>
+The following known environment variables affect program runtime:
+
+* `EFCK_TYPEOUT_CMD=` the command to pass typeout text as args to. E.g.:
+  `EFCK_TYPEOUT_CMD='copyq copy' efck-chat-keyboard` to use [CopyQ](https://hluk.github.io/CopyQ/),
+* `ICON_FONT=` name of the installed emoji font to be used. See [question](#custom-font);
+* config location variables (see the [question above](#config-home)).
+
+</details>
+
 
 ## Custom emoji
 
