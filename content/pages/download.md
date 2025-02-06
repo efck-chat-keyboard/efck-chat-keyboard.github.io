@@ -121,6 +121,8 @@ GNU/Linux</summary>
 
 [Debian / Ubuntu / Linux Mint DEB package](/dl/debian.html){: target=_blank}, 150 kB
 
+[Fedora RPM package](/dl/fedora.html){: target=_blank}, 250 kB
+
 <hr style="margin-top:4em">
 
 #### Installation Notes
