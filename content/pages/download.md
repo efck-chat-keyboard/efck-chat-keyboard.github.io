@@ -135,6 +135,9 @@ If on **Wayland**, additionally install package _**ydotool**_, e.g.
 
     sudo apt install ydotool
 
+or you can override the chosen typeout command by setting
+[`EFCK_TYPEOUT_CMD` environment variable](/faq/#env-vars).
+
 It is recommended to
 assign a **keyboard shortcut**
 such as <kbd>Win</kbd>+<kbd>.</kbd>,

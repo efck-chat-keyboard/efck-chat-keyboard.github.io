@@ -82,7 +82,7 @@ In all above cases, `{APP_NAME}` stands for `"efck-chat-keyboard"`.
 </details>
 
 
-<details markdown="1" id="config-home">
+<details markdown="1" id="env-vars">
 <summary><h3>Customization via environment variables ...</h3></summary>
 The following known environment variables affect program runtime:
 
