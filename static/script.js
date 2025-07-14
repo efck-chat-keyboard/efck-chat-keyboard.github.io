@@ -20,23 +20,3 @@ window.location.hash = hash;
 }
 window.addEventListener('load', open_target_details);
 window.addEventListener('hashchange', open_target_details);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

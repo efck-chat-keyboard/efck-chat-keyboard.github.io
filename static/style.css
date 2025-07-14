@@ -188,7 +188,6 @@ overflow-x: clip}
 font-weight: 500;
 color: navy}
 :where(main p a:hover){filter: brightness(160%)}
-
 :root{
 --fuzzy-box-border-width: 33px;
 --fuzzy-box-border-skew: 25px}
