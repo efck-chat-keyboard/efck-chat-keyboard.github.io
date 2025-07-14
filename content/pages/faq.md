@@ -10,6 +10,7 @@ quote: <q>What we anticipate seldom occurs; what we least expect generally happe
 <summary><h3>How do I cancel / close / exit the app?</h3></summary>
 To close EFCK, like any cancelable dialog, 
 simply use Escape (<kbd>Esc</kbd>) key.
+The dialog also disappears when it loses keyboard/click focus.
 See here for additional [keyboard shortcuts](#keyboard-shortcuts).
 </details>
 
@@ -147,7 +148,7 @@ For more inspiration, see [bundled _emoji-custom-strings.txt_](https://github.co
 * [**Noto Color Emoji**](https://fonts.google.com/noto/specimen/Noto+Color+Emoji)
   -- Google's emoji font used on Android and readily
   available on GNU/Linux.
-* [**Twitter Color Emoji**](https://twemoji.twitter.com)
+* [**Twitter Color Emoji**](https://github.com/13rac1/twemoji-color-font)
   -- A free-to-use Emoji font from Twitter,
   also shipped by Mozilla Firefox.
 * **SegoeUI Emoji** -- Windows 7-11 emoji font.
@@ -175,7 +176,7 @@ You can force use of a custom emoji font family by setting
 environment variable `ICON_FONT`. E.g.:
 
     export ICON_FONT="Twitter Color Emoji"
-    ./efck-chat-keyboard
+    ./efck-chat-keyboard --debug
 
 See instructions how to set environment variables
 [on Linux](https://www.google.com/search?q=set+environment+variable+linux),
