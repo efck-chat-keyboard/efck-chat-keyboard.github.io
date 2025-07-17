@@ -13,7 +13,9 @@ EFCK Chat Keyboard runs <del>well</del><ins>decently</ins> on all major desktop 
 <svg style="width: 2em" xmlns="http://www.w3.org/2000/svg" color="#0078d4" viewBox="0 0 24 24"><path d="M0 0h11.4v11.4H0Zm12.6 0H24v11.4H12.6ZM0 12.6h11.4V24H0Zm12.6 0H24V24H12.6"/></svg>
 Windows</summary>
 
-[Windows installer EXE](/dl/win.html){: target=_blank}, 23 MB
+[Windows installer EXE](/dl/win.html){: target=_blank}, 26 MB
+
+[Windows portable ZIP](/dl/win-zip.html){: target=_blank}, 38 MB
 
 <hr style="margin-top:4em">
 
@@ -45,7 +47,7 @@ _Microsoft Developer Account_. 🕴
 <summary itemprop="operatingSystem">
 <svg style="width: 2em;" xmlns="http://www.w3.org/2000/svg" color="gray" viewBox="0 0 24 24"><path d="M12.2 6.9c-1 0-2.5-1-4-1-2 0-4 1.1-5 3-2 3.6-.5 9 1.5 12 1 1.5 2.3 3.2 3.8 3.1 1.6 0 2.1-1 4-1 1.8 0 2.3 1 4 1 1.6 0 2.6-1.5 3.6-3a13 13 0 0 0 1.7-3.4 5.3 5.3 0 0 1-.6-9.4 5.6 5.6 0 0 0-4.4-2.4C14.8 5.6 13 7 12.2 7zm3.3-3c.9-1 1.4-2.5 1.3-3.9-1.2 0-2.7.8-3.6 1.8A5 5 0 0 0 12 5.5c1.3.1 2.7-.7 3.5-1.7"/></svg>
 macOS</summary>
-macOS package, 25 MB, flexible pricing:
+macOS package, 27 MB, flexible pricing:
 <form id="buy-form" action="https://www.buymeacoffee.com/__k_"><label>💲 <input type="number" value="5" min=0 style="width: 7ch"></label> <button type="submit">Buy for $5</button></form>
 <script>
 let [f, input, btn] = document.querySelectorAll('#buy-form, #buy-form input, #buy-form button');
@@ -117,7 +119,7 @@ _Apple Developer Program_. 🕴
 ![ ]({static}/images/linux.webp){: style="width: 2em;"}
 GNU/Linux</summary>
 
-[Generic GNU/Linux x64 binary archive](/dl/linux.html){: target=_blank} (X11/Wayland), 54 MB
+[Generic GNU/Linux x64 binary archive](/dl/linux.html){: target=_blank} (X11/Wayland), 63 MB
 
 [Debian / Ubuntu / Linux Mint DEB package](/dl/debian.html){: target=_blank}, 150 kB
 
