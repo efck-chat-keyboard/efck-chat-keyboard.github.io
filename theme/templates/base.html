@@ -9,6 +9,7 @@
     <meta name="description" content="{{ content_obj.description | escape }}">
     {% endif %}
 
+    <meta name="referrer" content="same-origin">
     <link rel="stylesheet" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/sanitize.css">
     <link rel="stylesheet" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/style.css">
     <link rel="stylesheet" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/style-desktop.css" media="screen and (min-width: 790px)">
@@ -52,6 +53,10 @@
     <span itemprop="offers" itemscope itemtype="https://schema.org/Offer">
         <meta itemprop="price" content="0">
         <meta itemprop="priceCurrency" content="USD">
+    </span>
+    <span itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
+        <meta about="#review" content="4" itemprop="ratingCount">
+        <meta about="#review" content="4.2" itemprop="ratingValue">
     </span>
 
     <header>
